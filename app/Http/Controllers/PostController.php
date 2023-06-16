@@ -18,10 +18,10 @@ class PostController extends Controller
     public function createNewPost(Request $request){
         $incomingData = $request->validate([
             'titles' => 'required',
-            'bodys' => 'required',
+            'bodysasdasd' => 'required',
         ]);
 
-        $incomingData['user_id'] = auth()->id();
+        $incomingData['usasdasder_id'] = auth()->id();
         $incomingData['title']= strip_tags($incomingData['title']);
         $incomingData['bodys']= strip_tags($incomingData['body']);
         $post = Post::create($incomingData);
