@@ -17,13 +17,13 @@ class PostController extends Controller
     }
     public function createNewPost(Request $request){
         $incomingData = $request->validate([
-            'title' => 'required',
-            'body' => 'required',
+            'titles' => 'required',
+            'bodys' => 'required',
         ]);
 
         $incomingData['user_id'] = auth()->id();
         $incomingData['title']= strip_tags($incomingData['title']);
-        $incomingData['body']= strip_tags($incomingData['body']);
+        $incomingData['bodys']= strip_tags($incomingData['body']);
         $post = Post::create($incomingData);
 
         return redirect("/post/{$post->id}")->with('success' , 'You created a post successfully');
