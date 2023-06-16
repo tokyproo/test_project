@@ -17,6 +17,7 @@ asd
               @enderror
             </div>
 asdasd
+asd
             <div class="form-group">
               <label for="email-sdaregister" class="text-muted mb-1"><small>Email</small></label>
               <input value="{{old('email')}}" name="email" id="email-register" class="form-control" type="text" placeholder="you@example.com" autocomplete="off" />
