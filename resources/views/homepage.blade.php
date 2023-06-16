@@ -1,5 +1,5 @@
 <x-layout>
-
+asd
     <div class="container py-md-5">
       <div class="row align-items-center">
         <div class="col-lg-7 py-3 py-md-5">
@@ -19,7 +19,7 @@
 asdasd
 asd
             <div class="form-group">
-              <label for="email-register" class="text-muted mb-1"><small>Email</small></label>
+              <label for="email-sdaregister" class="text-muted mb-1"><small>Email</small></label>
               <input value="{{old('email')}}" name="email" id="email-register" class="form-control" type="text" placeholder="you@example.com" autocomplete="off" />
               @error('email')
               <p style="color:red ; margin:5px">{{$message}}</p>
